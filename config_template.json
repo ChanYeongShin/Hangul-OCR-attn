@@ -1,0 +1,20 @@
+{
+  "training_params" : {
+    "learning_rate" : 1e-3,
+    "learning_decay_rate" : 0.95,
+    "learning_decay_steps" : 5000,
+    "save_interval" : 1e3,
+    "n_epochs" : 50,
+    "train_batch_size" : 10,
+    "eval_batch_size" : 10 
+  },
+  "input_shape" : [32, 304],
+  "string_split_delimiter" : "|",
+  "csv_delimiter" : ",",
+  "data_augmentation_max_rotation" : 0.1,
+  "input_data_n_parallel_calls" : 4,
+  "lookup_hangul_file" : "./data/hangul/hangul_code_750.json",
+  "csv_files_train" : ["./data/csv/training_eren_750_random.csv"],
+  "csv_files_eval" : ["./data/csv/evaluation_eren_750_random.csv"],
+"output_model_dir" : "./output_hangul_eren_750_v4/"
+}
